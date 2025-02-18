@@ -7,6 +7,11 @@
   <title>Document</title>
 
   <style>
+    body {
+    padding-top: 75px; /* Adjust this based on navbar height */
+    
+}
+
     /* The side navigation menu */
     .sidebar {
       margin: 0;
@@ -70,8 +75,8 @@
   
   <div class = "container">
     <div class = "row">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container">
           <a class="navbar-brand"><h2>Student Management System</h2></a>
           
         </div>
@@ -81,16 +86,18 @@
     <div class = "row">
       <div class="sidebar">
         <a class="active" href="#home">Home</a>
-        <a href="#news">Student</a>
-        <a href="#contact">Teacher</a>
-        <a href="#about">Courses</a>
-        <a href="#about">Enrollment</a>
-        <a href="#about">Payement</a>
+        <a href="{{ url('/students') }}">Student</a>
+        <a href="{{ url('/teachers') }}">Teacher</a>
+        <a href="{{ url('/courses') }}">Courses</a>
+        <a href="{{ url('/students') }}">Enrollment</a>
+        <a href="{{ url('/students') }}">Payement</a>
       </div>
 
       <!-- Page content -->
-      <div class="content">
-        @yield('content')
+      <div class="col-md-12">  
+        <div class="content">
+            @yield('content')
+        </div>
       </div>
     </div>
   </div>
