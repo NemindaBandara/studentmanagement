@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+
+
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
@@ -26,6 +28,8 @@ class CourseController extends Controller
     public function create(): View
     {
         return view ('courses.create');
+
+        
     }
 
     /**
