@@ -9,7 +9,7 @@
       <label>Enrollment Number</label><br>
       <input type="text" name="enroll_no" id="enroll_no" class="form-control"><br>
 
-      <label>Batch ID</label><br>
+      <label>Batch</label><br>
       <!-- <input type="text" name="batch_id" id="batch_id" class="form-control"><br> -->
 
       <select name="batch_id" id="batch_id" class="form-control">
@@ -19,7 +19,7 @@
       </select>
 
 
-      <label>Student ID</label><br>
+      <label>Student</label><br>
       <!-- <input type="text" name="student_id" id="student_id" class="form-control"><br> -->
 
       <select name="student_id" id="student_id" class="form-control">
