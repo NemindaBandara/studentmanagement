@@ -2,8 +2,8 @@
 @section('content')
 
 <div class="card">
-  <div class="card-reader">Batch</div>
-  <div class="class-body">
+  <div class="card-header">Batch</div>
+  <div class="card-body">
     <form action="{{ url('batches') }}" method="post">
     @csrf
       <label>Name</label><br>
