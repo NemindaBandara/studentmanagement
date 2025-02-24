@@ -19,4 +19,8 @@ class Enrollment extends Model
     public function student(){
         return $this->belongsTo(Student::class);
     }
+
+    public function fee(){
+        return "Rs. ". $this->fee;
+    }
 }

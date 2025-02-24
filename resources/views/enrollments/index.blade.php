@@ -30,7 +30,7 @@
                                 <td>{{ $item->batch->name }}</td>
                                 <td>{{ $item->student->name }}</td>
                                 <td>{{ $item->join_date }}</td>
-                                <td>{{ $item->fee }}</td>
+                                <td>{{ $item->fee() }}</td>
 
                                 <td>
                                     <a href="{{ url('/enrollments/' . $item->id) }}" title="View Enrollment"><button
