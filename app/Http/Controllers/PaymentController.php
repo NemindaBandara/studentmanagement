@@ -25,7 +25,7 @@ class PaymentController extends Controller
      */
     public function create(): View
     {
-        $enrollments=Enrollment::pluck('name', 'id');
+        $enrollments=Enrollment::pluck('enroll_no', 'id');
         return view('payments.create', compact('enrollments'));
     }
 
@@ -54,7 +54,7 @@ class PaymentController extends Controller
     public function edit(string $id): View
     {
         $payments = Payment::find($id);
-        return view ('payments.edit') -> with('payments', $enrollments);
+        return view ('payments.edit') -> with('payments', $payments);
     }
 
     /**
@@ -73,7 +73,8 @@ class PaymentController extends Controller
      */
     public function destroy(string $id): RedirectResponse
     {
-        Payment::destroy('id');
+        Payment::destroy($id);
         return redirect('payments')->with('flash_message', 'Payment Deleted!');
+        
     }
 }

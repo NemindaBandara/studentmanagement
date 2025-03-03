@@ -78,7 +78,7 @@ class EnrollmentController extends Controller
      */
     public function destroy(string $id): RedirectResponse
     {
-        Enrollment::destroy('id');
+        Enrollment::destroy($id);
         return redirect('enrollments')->with('flash_message', 'Enrollment Deleted!');
     }
 }

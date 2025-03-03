@@ -10,7 +10,7 @@
     @method("PATCH")
     <input type="hidden" name="id" id="id" value="{{$payments->id}}" class="form-control"><br>  
       <label>Enrollment Number</label><br>
-      <input type="text" name="enrollment_id" id="enrollment_id" value="{{$enrollments->enrollment_id}}" class="form-control"><br>
+      <input type="text" name="enrollment_id" id="enrollment_id" value="{{$payments->enroll_no}}" class="form-control"><br>
       <label>Paid Date</label><br>
       <input type="text" name="paid_date" id="paid_date" value="{{$payments->paid_date}}" class="form-control"><br>
       <label>Fee</label><br>

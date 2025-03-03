@@ -13,5 +13,9 @@ class Payment extends Model
     public function enrollment(){
         return $this->belongsTo(Enrollment::class);
     }
+
+    public function amount(){
+        return "Rs. ". $this->amount;
+    }
     
 }
