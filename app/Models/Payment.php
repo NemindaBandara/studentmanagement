@@ -17,5 +17,7 @@ class Payment extends Model
     public function amount(){
         return "Rs. ". $this->amount;
     }
+
+    // comment
     
 }
